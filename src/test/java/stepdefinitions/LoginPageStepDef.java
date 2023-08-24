@@ -112,6 +112,9 @@ public class LoginPageStepDef {
     	Select year= new Select(driver.findElement(By.id("year")));
     	Thread.sleep(3000);
     	year.selectByVisibleText("1995");
+    	year.selectByVisibleText("1996");
+    	year.selectByVisibleText("1997");
+    	
     	
     	driver.findElement(By.xpath("//label[contains(text(),'Male')]/following::input[@name='sex'][1]")).click();
     	Thread.sleep(5000);
