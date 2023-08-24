@@ -107,6 +107,7 @@ public class LoginPageStepDef {
     	Select date = new Select(driver.findElement(By.id("day")));
     	Thread.sleep(3000);
     	date.selectByVisibleText("15");
+    	System.out.println("ABC");
     	
     	Select month= new Select(driver.findElement(By.id("month")));
     	Thread.sleep(3000);
@@ -114,6 +115,7 @@ public class LoginPageStepDef {
     	// xx
     	month.selectByVisibleText("Aug");
     	month.selectByVisibleText("Jan");
+    	System.out.println("ABC");
     	
     	
     	Select year= new Select(driver.findElement(By.id("year")));
