@@ -108,12 +108,21 @@ public class LoginPageStepDef {
     	Select month= new Select(driver.findElement(By.id("month")));
     	Thread.sleep(3000);
     	month.selectByVisibleText("Apr");
+    	// xx
+    	month.selectByVisibleText("Aug");
+    	month.selectByVisibleText("Jan");
+    	
     	
     	Select year= new Select(driver.findElement(By.id("year")));
     	Thread.sleep(3000);
     	year.selectByVisibleText("1995");
     	year.selectByVisibleText("1996");
     	year.selectByVisibleText("1997");
+    	
+    	//from person x
+    	year.selectByVisibleText("2000");
+    	year.selectByVisibleText("2020");
+    	
     	
     	
     	driver.findElement(By.xpath("//label[contains(text(),'Male')]/following::input[@name='sex'][1]")).click();
