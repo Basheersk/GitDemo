@@ -44,17 +44,20 @@ public class LoginPageStepDef {
     public void i_have_entered_a_valid_username_and_password() {
         loginPage.enterEmail("8519981566");
         loginPage.enterPassword("Amma@143143");
+        System.out.println("ABC");
     }
 
     @Given("I have entered invalid {string} and {string}")
     public void i_have_entered_invalid_and(String username, String password) {
         loginPage.enterEmail(username);
         loginPage.enterPassword(password);
+        System.out.println("ABC");
     }
 
     @When("I click on the login button")
     public void i_click_on_the_login_button() {
         loginPage.clickLoginButton();
+        System.out.println("ABC");
     }
 
     @Then("I should be logged in successfully")
@@ -122,6 +125,8 @@ public class LoginPageStepDef {
     	//from person x
     	year.selectByVisibleText("2000");
     	year.selectByVisibleText("2020");
+    	System.out.println("ABC");
+    	
     	
     	
     	
